@@ -1,0 +1,21 @@
+[project]
+name = "cloud-manager-ai"
+version = "0.1.0"
+description = "Autonomous Cloud Resource Manager for Meta x Scaler Hackathon"
+dependencies = [
+    "openenv-core>=0.1.0",
+    "fastapi",
+    "uvicorn",
+    "gradio",
+    "openai",
+    "numpy",
+    "pandas",
+    "python-multipart"
+]
+
+[project.scripts]
+server = "server.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
